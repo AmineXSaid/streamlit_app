@@ -8,7 +8,7 @@ app_mode = st.sidebar.selectbox('Select Page',['Home','Prediction'])
 
 if app_mode=="Home":
     st.title("IS IT A CAR OR A PLANE ?")
-    st.image(Image.open(r"web_app\carvsplane.jpg"))
+    st.image(Image.open(r"/app/streamlit_app/web_app/carvsplane.jpg"))
 
 elif app_mode=="Prediction":
     model=keras.models.load_model(r"Model1")
